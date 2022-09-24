@@ -1,0 +1,28 @@
+.hourCard {
+	background-color: aliceblue;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	color: steelblue;
+	font-size: 1.2em;
+}
+
+.hourlyTime {
+	width: 100%;
+	height: 1em;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.hourlyIcon {
+	text-align: center;
+	width: 100%;
+}
+
+.hourlyWeatherIcon {
+	font-size: 3rem;
+	width: 100%;
+	margin-top: 10px;
+}
