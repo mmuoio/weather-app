@@ -85,7 +85,7 @@ class Current extends Component {
 			hourArr: newHourArr,
 			hourIndex: currentHourIndex,
 		});
-		if (currentHourIndex == 0) {
+		if (currentHourIndex === 0) {
 			$(".prevArrow").classList.add("disabled");
 		}
 	}
