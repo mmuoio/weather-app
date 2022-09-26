@@ -128,8 +128,8 @@ class App extends Component {
 			75: { label: "Heavy snow", icon: "fa-snowflakes" },
 			77: { label: "Snow grains", icon: "fa-snowflakes" },
 			//Rain showers
-			80: { label: "Light rain showers", icon: "fa-cloud-showers" },
-			81: { label: "Rain showers", icon: "fa-cloud-showers" },
+			80: { label: "Light rain showers", icon: "fa-cloud-showers-heavy" },
+			81: { label: "Rain showers", icon: "fa-cloud-showers-heavy" },
 			82: { label: "Heavy rain showers", icon: "fa-cloud-showers-heavy" },
 			85: { label: "Snow showers", icon: "fa-snowflake" },
 			86: { label: "Heavy snow showers", icon: "fa-snowflakes" },

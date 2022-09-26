@@ -60,7 +60,15 @@ class Current extends Component {
 	}
 
 	getNextHours() {
-		const currentHourIndex = this.state.hourIndex + 4;
+		const currentHourIndex =
+			this.props.hourly.time.length - 1 > this.state.hourIndex + 8
+				? this.state.hourIndex + 4
+				: this.props.hourly.time.length - 5;
+		console.log(
+			this.props.hourly.time.length - 1,
+			this.state.hourIndex + 8
+		);
+
 		const newHourArr = this.getHourArray(
 			currentHourIndex,
 			this.props.hourly
@@ -69,6 +77,9 @@ class Current extends Component {
 			hourArr: newHourArr,
 			hourIndex: currentHourIndex,
 		});
+		if (this.props.hourly.time.length - 1 <= this.state.hourIndex + 8) {
+			$(".nextArrow").classList.add("disabled");
+		}
 		if ($(".prevArrow").classList.contains("disabled")) {
 			$(".prevArrow").classList.remove("disabled");
 		}
@@ -87,6 +98,9 @@ class Current extends Component {
 		});
 		if (currentHourIndex === 0) {
 			$(".prevArrow").classList.add("disabled");
+		}
+		if ($(".nextArrow").classList.contains("disabled")) {
+			$(".nextArrow").classList.remove("disabled");
 		}
 	}
 
